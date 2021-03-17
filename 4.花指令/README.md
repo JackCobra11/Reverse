@@ -6,7 +6,7 @@
 
 去除：NOP
 
-'''
+```//代码段
 #include <iostream>
 using namespace std;
 int main()
