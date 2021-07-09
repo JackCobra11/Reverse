@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 	int password;
-lable1:
+label1:
 	cout << "请输入：";
 	cin >> password;
 	if (password == 114514)
@@ -13,7 +13,7 @@ lable1:
 	else
 	{
 		cout << "输入错误"<<endl;
-		goto lable1;
+		goto label1;
 	}
 	return 0;
 }
