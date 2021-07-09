@@ -10,11 +10,11 @@ int main()
         cout << "QAQ";
         __asm
         {
-            je lable1;
-            jmp lable2;
+            je label1;
+            jmp label2;
             _emit 0x8;
-        lable1:;
-        lable2:;
+        label1:;
+        label2:;
         }
     }
     else
@@ -22,11 +22,11 @@ int main()
         cout << "QVQ";
         __asm
         {
-            je lable3;
-            jmp lable4;
+            je label3;
+            jmp label4;
             _emit 0x8;
-        lable3:;
-        lable4:;
+        label3:;
+        label4:;
         }
     }
     return 0;
