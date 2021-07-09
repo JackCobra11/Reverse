@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -6,7 +6,7 @@ int main()
 	char str2[] = { 0xCA ,0xE4 ,0xC8 ,0xEB ,0xD5 ,0xFD ,0xC8 ,0xB7 ,'\0' };
 	char str3[] = { 0xCA ,0xE4 ,0xC8 ,0xEB ,0xB4 ,0xED ,0xCE ,0xF3 ,'\0' };
 	int password;
-lable1:
+label1:
 	cout<<str1;
 	cin >> password;
 	if (password == 114514)
@@ -16,7 +16,7 @@ lable1:
 	else
 	{
 		cout<<str3<<endl;
-		goto lable1;
+		goto label1;
 	}
 	return 0;
 }
