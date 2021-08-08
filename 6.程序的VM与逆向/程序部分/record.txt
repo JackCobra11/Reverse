@@ -1,0 +1,30 @@
+VM
+类似于花指令，不影响程序运行，但影响反汇编读取
+
+00418950  /$  55            push ebp
+
+00418BD8    FF55 FC         call dword ptr ss:[ebp-0x4]
+
+FF25
+DISPATCHER
+
+00418910 <> .  8D4424 08     lea eax,dword ptr ss:[esp+0x8]
+00418914    .  83EC 0C       sub esp,0xC
+00418917    .  50            push eax
+00418918    .  FF7424 14     push dword ptr ss:[esp+0x14]
+0041891C    .  33C0          xor eax,eax
+0041891E    .  894424 08     mov dword ptr ss:[esp+0x8],eax
+00418922    .  894424 0C     mov dword ptr ss:[esp+0xC],eax
+00418926    .  894424 10     mov dword ptr ss:[esp+0x10],eax
+0041892A    .  8D5424 08     lea edx,dword ptr ss:[esp+0x8]
+0041892E    .  52            push edx
+0041892F    .  FFD3          call ebx                                 ;  <xxk.信息框>
+00418931    .  8B4424 0C     mov eax,dword ptr ss:[esp+0xC]
+00418935    .  8B5424 10     mov edx,dword ptr ss:[esp+0x10]
+00418939    .  8B4C24 14     mov ecx,dword ptr ss:[esp+0x14]
+0041893D    .  83C4 18       add esp,0x18
+00418940    .  C3            retn
+
+8D 44 24 08 83 EC 0C 50 FF 74 24 14 33 C0 89 44 24 08 89 44 24 0C 89 44 24 10 8D 54 24 08 52 FF
+D3 8B 44 24 0C 8B 54 24 10 8B 4C 24 14 83 C4 18 C3
+
