@@ -1,3 +1,3 @@
-原程序xxk.exe
+原程序xxk.e
 
-加VM的程序xxk.vmp.exe
+
